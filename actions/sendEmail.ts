@@ -1,5 +1,4 @@
 "use server";
-import ContactFormEmail from "@/email/contact-form-email";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -25,16 +24,13 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
-  let data;
   try {
     await resend.emails.send({
       from: "Contact form <onboarding@resend.dev>",
       to: "ememe.ebuka@imalipay.com",
       subject: "message from resenders",
       reply_to: email as string,
-      react: (
-        <ContactFormEmail message={message as string} email={email as string} />
-      ),
+      text: message as string,
     });
   } catch (error: unknown) {
     if (error instanceof Error) {
@@ -42,6 +38,4 @@ export const sendEmail = async (formData: FormData) => {
     } else if (error && typeof error === "object" && "message" in error) {
     }
   }
-
-  return { data };
 };
