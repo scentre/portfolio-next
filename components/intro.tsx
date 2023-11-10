@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import myImg from "@/public/mypic.jpeg";
+import myImg from "@/public/tc.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -32,11 +32,11 @@ export default function Intro() {
           <Image
             src={myImg}
             alt="my picture"
-            width={"200"}
-            height={"200"}
+            width={"250"}
+            height={"250"}
             quality={"96"}
             priority={true}
-            className="h-24 w-24 rounded-full  border-[0.35rem] border-white object-cover shadow-xl"
+            className="h-[110px] w-[110px] rounded-full  border-[0.35rem] border-white object-cover shadow-xl"
           />
         </motion.div>
       </div>
@@ -46,11 +46,13 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello I am ebuka</span>I am a{" "}
+        <span className="font-bold ml-1">Hello I am ebuka</span> I am a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span>of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>
+        <span className="font-bold ">3 years</span> of experience in the fintech
+        realm. I enjoy building <span className="italic">sites & apps</span>. My
+        focus is <span className="underline">React (Next.js)</span> i also love
+        writing article and contributing to open source.
+        <span> visit my linkedln for more</span>
       </motion.p>
 
       <motion.div
@@ -82,12 +84,16 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 flex items-center gap-2 rounded-full text-gray-700 text-[1.35rem] focus:scale-[1.15] hover:scale-110 active:scale-[1.15] hover:text-gray-950 transition-all cursor-pointer border border-black/10  dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/ebuka-tc"
           target="_blank"
         >
           <BsLinkedin />
         </a>
-        <a className="bg-white p-4 flex items-center gap-2 rounded-full text-gray-700 text-[1.35rem] focus:scale-[1.15] hover:scale-110 active:scale-[1.15] hover:text-gray-950 transition-all cursor-pointer border border-black/10  dark:bg-white/10 dark:text-white/60">
+        <a
+          className="bg-white p-4 flex items-center gap-2 rounded-full text-gray-700 text-[1.35rem] focus:scale-[1.15] hover:scale-110 active:scale-[1.15] hover:text-gray-950 transition-all cursor-pointer border border-black/10  dark:bg-white/10 dark:text-white/60"
+          href="https://github.com/whitechapel007"
+          target="_blank"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>

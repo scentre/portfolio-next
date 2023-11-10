@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import dashboard from "@/public/dashboard.png";
+import docs from "@/public/docs.png";
+import ecommerce from "@/public/e-commerce.png";
+import jobApp from "@/public/job-app.png";
 
 export const links = [
   {
@@ -35,52 +36,67 @@ export const links = [
 
 export const experiencesData = [
   {
-    cardTitle: "Graduated bootcamp",
-    cardSubtitle: "Miami, FL",
+    cardTitle: "Rentaa. ng, Remote",
+    cardSubtitle: "Front End Developer, React",
     cardDetailedText:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "A social lending marketplace that allows anyone to lend out and rent gadgets, devices, and equipment with optimal ease, convenience, and security.",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
   {
-    cardTitle: "Front-End Developer",
-    cardSubtitle: "Orlando, FL",
+    cardTitle: "Huawei Technologies, Lagos Nigeria",
+    cardSubtitle: "FRONT OFFICE ENGINEER",
     cardDetailedText:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "i worked with network monitoring tools to track network devices, servers, and applications, identifying and addressing any issues or anomalies that arise",
     icon: React.createElement(CgWorkAlt),
     date: "2021",
   },
   {
-    cardTitle: "Full-Stack Developer",
-    cardSubtitle: "Houston, TX",
+    cardTitle: "GomyCode, Lagos Nigeria",
+    cardSubtitle: "WEB DEVELOPER, (INSTRUCTOR - CONTRACT)",
     cardDetailedText:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "i work as a part-time web development instructor with gomycode on the weekends",
     icon: React.createElement(FaReact),
-    date: "2021",
+    date: "2023",
+  },
+  {
+    cardTitle: "ImaliPay, Lagos Nigeria",
+    cardSubtitle: "FRONT END DEVELOPER, (Fintech Startup)",
+    cardDetailedText:
+      "I'm front end developer working with a fintech. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to collaborations and other opportunities.",
+    icon: React.createElement(FaReact),
+    date: "2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "internal dashboard",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I worked as a front-end developer on this project for.Users can have real-time data on transactions and perform many fuctionalities like export, filter etc.",
+    tags: ["React", "Next.js", "CHakra ui", "Tailwind", "swr"],
+    imageUrl: dashboard,
   },
   {
-    title: "rmtDev",
+    title: "jobify",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "I worked as a full-stack developer on this project. Users can post jobs and search for jobs, edit and delete jobs.",
+    tags: ["React", "Next.js", "MongoDB", "styled components"],
+    imageUrl: jobApp,
   },
   {
-    title: "Word Analytics",
+    title: "docs",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "api docs is a static site to view all our apis and their documentation. I was the front-end developer.",
+    tags: ["React", "TypeScript", "docusaurus", "Tailwind"],
+    imageUrl: docs,
+  },
+  {
+    title: "ecommerce",
+    description:
+      "an ecommerce site to buy check out products and add to cart.users can login and add items to cart.",
+    tags: ["React", "styled components", "Framer"],
+    imageUrl: ecommerce,
   },
 ] as const;
 
@@ -101,7 +117,5 @@ export const skillsData = [
   "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;

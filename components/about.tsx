@@ -19,30 +19,31 @@ const About = () => {
     >
       <SectionHeading text="About me" />
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+        <span className="block font-bold">What I Do:</span>
+        <span>
+          {" "}
+          <span className="font-bold "> Development: </span>I specialize in
+          React, Next.js, Node.js, and MongoDB, with a knack for TypeScript and
+          Prisma.
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I am not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I am also
-        learning how to play the guitar.
+        <span className="block">
+          <span className="font-bold ">Teaching: </span> I love sharing
+          knowledge. From writing articles to mentoring, empowering others in
+          coding is my thing. The tech world never stands still, and neither do
+          I. I am always exploring new technologies to stay ahead. Join me on
+          this tech journey, where innovation meets simplicity.
+        </span>
+        <span className="block">
+          <span className="font-bold ">
+            Writing and Open Source Contributions :
+          </span>{" "}
+          Beyond coding, I channel my enthusiasm into the written word. I
+          regularly pen down articles on software development, sharing insights,
+          tips, and my experiences in the tech landscape. Additionally, I am an
+          avid supporter of the open-source community, contributing to projects
+          that resonate with my mission of fostering collaboration and
+          innovation on my linkedin.
+        </span>
       </p>
     </motion.section>
   );
