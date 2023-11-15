@@ -52,7 +52,7 @@ export default function Intro() {
         realm. I enjoy building <span className="italic">sites & apps</span>. My
         focus is <span className="underline">React (Next.js)</span> i also love
         writing article and contributing to open source.
-        <span> visit my linkedln for more</span>
+        <span> Catch a glimpse of my coding journey on LinkedIn!</span>
       </motion.p>
 
       <motion.div
